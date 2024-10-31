@@ -1,0 +1,108 @@
+[
+  {
+    "ContainingType": "CRUD.Controllers.GameController",
+    "Method": "CreateGame",
+    "RelativePath": "game",
+    "HttpMethod": "POST",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "game",
+        "Type": "CRUD.Models.InputModels.GameInputModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CRUD.Controllers.GameController",
+    "Method": "GetGameList",
+    "RelativePath": "game",
+    "HttpMethod": "GET",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "GenreId",
+        "Type": "System.Nullable\u00601[[System.Guid, System.Private.CoreLib, Version=8.0.0.0, Culture=neutral, PublicKeyToken=7cec85d7bea7798e]]",
+        "IsRequired": false
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CRUD.Controllers.GameController",
+    "Method": "UpdateGame",
+    "RelativePath": "game",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "game",
+        "Type": "CRUD.Models.InputModels.GameInputModel",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CRUD.Controllers.GameController",
+    "Method": "DeleteGame",
+    "RelativePath": "game/{gameId}",
+    "HttpMethod": "DELETE",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gameId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CRUD.Controllers.GameController",
+    "Method": "AddGenreGame",
+    "RelativePath": "game/{gameId}/genre/{genreId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gameId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "genreId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  },
+  {
+    "ContainingType": "CRUD.Controllers.GameController",
+    "Method": "AddStudioGame",
+    "RelativePath": "game/{gameId}/studio/{studioId}",
+    "HttpMethod": "PUT",
+    "IsController": true,
+    "Order": 0,
+    "Parameters": [
+      {
+        "Name": "gameId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      },
+      {
+        "Name": "studioId",
+        "Type": "System.Guid",
+        "IsRequired": true
+      }
+    ],
+    "ReturnTypes": []
+  }
+]
