@@ -10,3 +10,4 @@ C:\Users\Trush\Desktop\CRUD\Databases\obj\Debug\net8.0\Databases.dll
 C:\Users\Trush\Desktop\CRUD\Databases\obj\Debug\net8.0\refint\Databases.dll
 C:\Users\Trush\Desktop\CRUD\Databases\obj\Debug\net8.0\Databases.pdb
 C:\Users\Trush\Desktop\CRUD\Databases\obj\Debug\net8.0\ref\Databases.dll
+C:\Users\Trush\Desktop\CRUD\Databases\obj\Debug\net8.0\Databases.sourcelink.json

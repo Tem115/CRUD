@@ -4,28 +4,28 @@
         <name>CRUD</name>
     </assembly>
     <members>
-        <member name="M:CRUD.Controllers.GameController.CreateGame(CRUD.Models.InputModels.GameInputModel)">
+        <member name="M:CRUD.Controllers.GameController.CreateGameAsync(CRUD.Models.InputModels.GameInputModel)">
             <summary>
             Создание игры
             </summary>
             <param name="game"></param>
             <returns></returns>
         </member>
-        <member name="M:CRUD.Controllers.GameController.GetGameList(CRUD.Models.GameSearchCriteria)">
+        <member name="M:CRUD.Controllers.GameController.GetGameListAsync(CRUD.Models.GameSearchCriteria)">
             <summary>
             Получение списка игр с возможностью фильтрации
             </summary>
             <param name="gameSearchCriteria"></param>
             <returns></returns>
         </member>
-        <member name="M:CRUD.Controllers.GameController.UpdateGame(CRUD.Models.InputModels.GameInputModel)">
+        <member name="M:CRUD.Controllers.GameController.UpdateGameAsync(CRUD.Models.InputModels.GameInputModel)">
             <summary>
             Изменение игры
             </summary>
             <param name="game"></param>
             <returns></returns>
         </member>
-        <member name="M:CRUD.Controllers.GameController.AddGenreGame(System.Guid,System.Guid)">
+        <member name="M:CRUD.Controllers.GameController.AddGenreGameAsync(System.Guid,System.Guid)">
             <summary>
             Добавление жанра игры
             </summary>
@@ -33,7 +33,7 @@
             <param name="genreId"></param>
             <returns></returns>
         </member>
-        <member name="M:CRUD.Controllers.GameController.AddStudioGame(System.Guid,System.Guid)">
+        <member name="M:CRUD.Controllers.GameController.AddStudioGameAsync(System.Guid,System.Guid)">
             <summary>
             Добавление студии игры
             </summary>
@@ -41,7 +41,7 @@
             <param name="studioId"></param>
             <returns></returns>
         </member>
-        <member name="M:CRUD.Controllers.GameController.DeleteGame(System.Guid)">
+        <member name="M:CRUD.Controllers.GameController.DeleteGameAsync(System.Guid)">
             <summary>
             Удаление игры
             </summary>

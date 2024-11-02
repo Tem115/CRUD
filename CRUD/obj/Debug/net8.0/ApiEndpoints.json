@@ -1,7 +1,7 @@
 [
   {
     "ContainingType": "CRUD.Controllers.GameController",
-    "Method": "CreateGame",
+    "Method": "CreateGameAsync",
     "RelativePath": "game",
     "HttpMethod": "POST",
     "IsController": true,
@@ -17,7 +17,7 @@
   },
   {
     "ContainingType": "CRUD.Controllers.GameController",
-    "Method": "GetGameList",
+    "Method": "GetGameListAsync",
     "RelativePath": "game",
     "HttpMethod": "GET",
     "IsController": true,
@@ -33,7 +33,7 @@
   },
   {
     "ContainingType": "CRUD.Controllers.GameController",
-    "Method": "UpdateGame",
+    "Method": "UpdateGameAsync",
     "RelativePath": "game",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -49,7 +49,7 @@
   },
   {
     "ContainingType": "CRUD.Controllers.GameController",
-    "Method": "DeleteGame",
+    "Method": "DeleteGameAsync",
     "RelativePath": "game/{gameId}",
     "HttpMethod": "DELETE",
     "IsController": true,
@@ -65,7 +65,7 @@
   },
   {
     "ContainingType": "CRUD.Controllers.GameController",
-    "Method": "AddGenreGame",
+    "Method": "AddGenreGameAsync",
     "RelativePath": "game/{gameId}/genre/{genreId}",
     "HttpMethod": "PUT",
     "IsController": true,
@@ -86,7 +86,7 @@
   },
   {
     "ContainingType": "CRUD.Controllers.GameController",
-    "Method": "AddStudioGame",
+    "Method": "AddStudioGameAsync",
     "RelativePath": "game/{gameId}/studio/{studioId}",
     "HttpMethod": "PUT",
     "IsController": true,

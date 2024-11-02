@@ -5,63 +5,63 @@ using CRUD.Models.OutputModels;
 using Databases.DbContexts;
 using Databases.Tables;
 using Microsoft.EntityFrameworkCore;
-using System.Reflection.Emit;
 
 namespace CRUD.Services
 {
     public class GameService(GamesDbContext _gamesDbContext, IMapper _mapper)
     {
-        public GameOutputModel CreateGame(GameInputModel gameModel)
+        public async Task<GameOutputModel> CreateGameAsync(GameInputModel gameModel)
         {
-            Game game = _mapper.Map<Game>(gameModel);
-            _gamesDbContext.Games.Add(game);
-            _gamesDbContext.SaveChanges();
+            Game game = new Game()
+            {
+                Name = gameModel.Name,
+                Visible = true
+            };
+            await _gamesDbContext.Games.AddAsync(game);
+            await _gamesDbContext.SaveChangesAsync();
             return _mapper.Map<GameOutputModel>(game);
         }
 
-        public List<GameOutputModel>? GetGameList(GameSearchCriteria gameSearchCriteria)
+        public async Task<List<GameOutputModel>> GetGameListAsync(GameSearchCriteria gameSearchCriteria)
         {
-            IQueryable<Game> games = _gamesDbContext.Games.AsNoTracking().Where(g => g.Visable);
+            IQueryable<Game> games = _gamesDbContext.Games.AsNoTracking().Where(g => g.Visible);
             if (gameSearchCriteria.GenreId.HasValue)
-                games = games.Include(g => g.Genres).Include(g => g.Studios).Where(g => g.Visable && g.Genres!.Select(gnr => gnr.Id).Contains(gameSearchCriteria.GenreId.Value));
-            return _mapper.Map<List<GameOutputModel>>(games.ToList());
+                games = games.Include(g => g.Genres).Include(g => g.Studios).Where(g => g.Visible && g.Genres!.Any(gnr => gnr.Id.Equals(gameSearchCriteria.GenreId.Value)));
+            return _mapper.Map<List<GameOutputModel>>(await games.ToListAsync());
         }
 
-        public GameOutputModel UpdateGame(GameInputModel gameModel)
+        public async Task<GameOutputModel> UpdateGameAsync(GameInputModel gameModel)
         {
-            Game game = _gamesDbContext.Games.First(g => g.Visable && g.Id.Equals(gameModel.Id));
-            Game modifiedGame = _mapper.Map<Game>(gameModel);
-            game.Name = modifiedGame.Name;
+            Game game = _gamesDbContext.Games.First(g => g.Visible && g.Id.Equals(gameModel.Id));
+            game.Name = gameModel.Name;
             _gamesDbContext.Games.Update(game);
-            _gamesDbContext.SaveChanges();
+            await _gamesDbContext.SaveChangesAsync();
             return _mapper.Map<GameOutputModel>(game);
         }
 
-        public GameOutputModel AddGenreGame(Guid gameId, Guid genreId)
+        public async Task<GameOutputModel> AddGenreGameAsync(Guid gameId, Guid genreId)
         {
-            Game game = _gamesDbContext.Games.First(g => g.Visable && g.Id.Equals(gameId));
+            Game game = _gamesDbContext.Games.Include(g => g.Genres).First(g => g.Visible && g.Id.Equals(gameId));
             Genre genre = _gamesDbContext.Genres.First(g => g.Id.Equals(genreId));
-            game.Genres ??= [];
             game.Genres.Add(genre);
-            _gamesDbContext.SaveChanges();
+            await _gamesDbContext.SaveChangesAsync();
             return _mapper.Map<GameOutputModel>(game);
         }
 
-        public GameOutputModel AddStudioGame(Guid gameId, Guid studioId)
+        public async Task<GameOutputModel> AddStudioGameAsync(Guid gameId, Guid studioId)
         {
-            Game game = _gamesDbContext.Games.First(g => g.Visable && g.Id.Equals(gameId));
+            Game game = _gamesDbContext.Games.Include(g => g.Studios).First(g => g.Visible && g.Id.Equals(gameId));
             Studio studio = _gamesDbContext.Studios.First(g => g.Id.Equals(studioId));
-            game.Studios ??= [];
             game.Studios.Add(studio);
-            _gamesDbContext.SaveChanges();
+            await _gamesDbContext.SaveChangesAsync();
             return _mapper.Map<GameOutputModel>(game);
         }
 
-        public GameOutputModel DeleteGame(Guid gameId)
+        public async Task<GameOutputModel> DeleteGameAsync(Guid gameId)
         {
-            Game game = _gamesDbContext.Games.First(g => g.Visable && g.Id.Equals(gameId));
-            game.Visable = false;
-            _gamesDbContext.SaveChanges();
+            Game game = _gamesDbContext.Games.First(g => g.Visible && g.Id.Equals(gameId));
+            game.Visible = false;
+            await _gamesDbContext.SaveChangesAsync();
             return _mapper.Map<GameOutputModel>(game);
         }
     }

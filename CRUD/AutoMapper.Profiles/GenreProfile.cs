@@ -8,7 +8,7 @@ namespace CRUD.AutoMapper.Profiles
     {
         public GenreProfile()
         {
-            CreateMap<Genre, GenreOutputModel>().ReverseMap();
+            CreateMap<Genre, GenreOutputModel>();
         } 
     }
 }

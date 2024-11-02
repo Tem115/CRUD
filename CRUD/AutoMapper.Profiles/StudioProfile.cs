@@ -8,7 +8,7 @@ namespace CRUD.AutoMapper.Profiles
     {
         public StudioProfile()
         {
-            CreateMap<Studio, StudioOutputModel>().ReverseMap();
+            CreateMap<Studio, StudioOutputModel>();
         } 
     }
 }

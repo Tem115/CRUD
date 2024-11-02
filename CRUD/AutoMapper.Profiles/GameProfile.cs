@@ -9,8 +9,7 @@ namespace CRUD.AutoMapper.Profiles
     {
         public GameProfile()
         {
-            CreateMap<Game, GameInputModel>().ReverseMap();
-            CreateMap<Game, GameOutputModel>().ReverseMap();
+            CreateMap<Game, GameOutputModel>();
         } 
     }
 }

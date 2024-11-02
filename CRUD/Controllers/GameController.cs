@@ -18,9 +18,9 @@ namespace CRUD.Controllers
         [HttpPost]
         [SwaggerOperation("Создание игры")]
         [DefaultException("Не удалось создать игру")]
-        public IActionResult CreateGame([FromBody] GameInputModel game)
+        public async Task<IActionResult> CreateGameAsync([FromBody] GameInputModel game)
         {
-            return Ok(gameService.CreateGame(game));
+            return Ok(await gameService.CreateGameAsync(game));
         }
 
         //TODO: Здесь поидеи надо закинуть интерфейс
@@ -34,9 +34,9 @@ namespace CRUD.Controllers
         [HttpGet]
         [SwaggerOperation("Получение списка игр с возможностью фильтрации")]
         [DefaultException("Не удалось получить список игр по заданным фильтрам")]
-        public IActionResult GetGameList([FromQuery] GameSearchCriteria gameSearchCriteria)
+        public async Task<IActionResult> GetGameListAsync([FromQuery] GameSearchCriteria gameSearchCriteria)
         {
-            return Ok(gameService.GetGameList(gameSearchCriteria));
+            return Ok(await gameService.GetGameListAsync(gameSearchCriteria));
         }
 
         /// <summary>
@@ -47,9 +47,9 @@ namespace CRUD.Controllers
         [HttpPut]
         [SwaggerOperation("Изменение игры")]
         [DefaultException("Не удалось изменить данные выбранной игры")]
-        public IActionResult UpdateGame([FromBody] GameInputModel game)
+        public async Task<IActionResult> UpdateGameAsync([FromBody] GameInputModel game)
         {
-            return Ok(gameService.UpdateGame(game));
+            return Ok(await gameService.UpdateGameAsync(game));
         }
 
         /// <summary>
@@ -61,9 +61,9 @@ namespace CRUD.Controllers
         [HttpPut("{gameId:guid}/genre/{genreId:guid}")]
         [SwaggerOperation("Добавление жанра игры")]
         [DefaultException("Не удалось добавить жанр игры")]
-        public IActionResult AddGenreGame(Guid gameId, Guid genreId)
+        public async Task<IActionResult> AddGenreGameAsync(Guid gameId, Guid genreId)
         {
-            return Ok(gameService.AddGenreGame(gameId, genreId));
+            return Ok(await gameService.AddGenreGameAsync(gameId, genreId));
         }
         
         /// <summary>
@@ -75,9 +75,9 @@ namespace CRUD.Controllers
         [HttpPut("{gameId:guid}/studio/{studioId:guid}")]
         [SwaggerOperation("Добавление студии игры")]
         [DefaultException("Не удалось добавить студию игры")]
-        public IActionResult AddStudioGame(Guid gameId, Guid studioId)
+        public async Task<IActionResult> AddStudioGameAsync(Guid gameId, Guid studioId)
         {
-            return Ok(gameService.AddStudioGame(gameId, studioId));
+            return Ok(await gameService.AddStudioGameAsync(gameId, studioId));
         }
 
         /// <summary>
@@ -88,9 +88,9 @@ namespace CRUD.Controllers
         [HttpDelete("{gameId:guid}")]
         [SwaggerOperation("Удаление игры")]
         [DefaultException("Не удалось удалить выбранную игру")]
-        public IActionResult DeleteGame(Guid gameId)
+        public async Task<IActionResult> DeleteGameAsync(Guid gameId)
         {
-            return Ok(gameService.DeleteGame(gameId));
+            return Ok(await gameService.DeleteGameAsync(gameId));
         }
     }
 }

@@ -84,3 +84,4 @@ C:\Users\Trush\Desktop\CRUD\CRUD\obj\Debug\net8.0\CRUD.xml
 C:\Users\Trush\Desktop\CRUD\CRUD\obj\Debug\net8.0\CRUD.pdb
 C:\Users\Trush\Desktop\CRUD\CRUD\obj\Debug\net8.0\CRUD.genruntimeconfig.cache
 C:\Users\Trush\Desktop\CRUD\CRUD\obj\Debug\net8.0\ref\CRUD.dll
+C:\Users\Trush\Desktop\CRUD\CRUD\obj\Debug\net8.0\CRUD.sourcelink.json
