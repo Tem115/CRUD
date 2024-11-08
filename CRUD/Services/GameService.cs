@@ -3,7 +3,7 @@ using CRUD.Models;
 using CRUD.Models.InputModels;
 using CRUD.Models.OutputModels;
 using Databases.DbContexts;
-using Databases.Tables;
+using Databases.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace CRUD.Services

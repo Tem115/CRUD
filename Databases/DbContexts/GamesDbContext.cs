@@ -1,4 +1,4 @@
-﻿using Databases.Tables;
+﻿using Databases.Entities;
 using Microsoft.EntityFrameworkCore;
 
 namespace Databases.DbContexts

@@ -3,16 +3,28 @@
   "WorkspaceRootPath": "C:\\Users\\Trush\\Desktop\\CRUD\\",
   "Documents": [
     {
+      "AbsoluteMoniker": "D:0:0:{566135E8-6326-4DDF-BE77-06B09EC76466}|CRUD\\CRUD.csproj|c:\\users\\trush\\desktop\\crud\\crud\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{566135E8-6326-4DDF-BE77-06B09EC76466}|CRUD\\CRUD.csproj|solutionrelative:crud\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
       "AbsoluteMoniker": "D:0:0:{F1DE8C90-4D2C-49B8-A5C5-1F81B6DEE131}|Databases\\Databases.csproj|c:\\users\\trush\\desktop\\crud\\databases\\dbcontexts\\gamesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
       "RelativeMoniker": "D:0:0:{F1DE8C90-4D2C-49B8-A5C5-1F81B6DEE131}|Databases\\Databases.csproj|solutionrelative:databases\\dbcontexts\\gamesdbcontext.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{F1DE8C90-4D2C-49B8-A5C5-1F81B6DEE131}|Databases\\Databases.csproj|c:\\users\\trush\\desktop\\crud\\databases\\tables\\tablebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{F1DE8C90-4D2C-49B8-A5C5-1F81B6DEE131}|Databases\\Databases.csproj|solutionrelative:databases\\tables\\tablebase.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{F1DE8C90-4D2C-49B8-A5C5-1F81B6DEE131}|Databases\\Databases.csproj|c:\\users\\trush\\desktop\\crud\\databases\\entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1DE8C90-4D2C-49B8-A5C5-1F81B6DEE131}|Databases\\Databases.csproj|solutionrelative:databases\\entities\\game.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     },
     {
-      "AbsoluteMoniker": "D:0:0:{566135E8-6326-4DDF-BE77-06B09EC76466}|CRUD\\CRUD.csproj|c:\\users\\trush\\desktop\\crud\\crud\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
-      "RelativeMoniker": "D:0:0:{566135E8-6326-4DDF-BE77-06B09EC76466}|CRUD\\CRUD.csproj|solutionrelative:crud\\services\\gameservice.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+      "AbsoluteMoniker": "D:0:0:{566135E8-6326-4DDF-BE77-06B09EC76466}|CRUD\\CRUD.csproj|c:\\users\\trush\\desktop\\crud\\crud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{566135E8-6326-4DDF-BE77-06B09EC76466}|CRUD\\CRUD.csproj|solutionrelative:crud\\program.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{566135E8-6326-4DDF-BE77-06B09EC76466}|CRUD\\CRUD.csproj|c:\\users\\trush\\desktop\\crud\\crud\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{566135E8-6326-4DDF-BE77-06B09EC76466}|CRUD\\CRUD.csproj|solutionrelative:crud\\controllers\\gamecontroller.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{F1DE8C90-4D2C-49B8-A5C5-1F81B6DEE131}|Databases\\Databases.csproj|c:\\users\\trush\\desktop\\crud\\databases\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}",
+      "RelativeMoniker": "D:0:0:{F1DE8C90-4D2C-49B8-A5C5-1F81B6DEE131}|Databases\\Databases.csproj|solutionrelative:databases\\entities\\baseentity.cs||{A6C744A8-0E4A-4FC6-886A-064283054674}"
     }
   ],
   "DocumentGroupContainers": [
@@ -22,29 +34,67 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 0,
+          "SelectedChildIndex": 5,
           "Children": [
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 2,
+              "Title": "Game.cs",
+              "DocumentMoniker": "C:\\Users\\Trush\\Desktop\\CRUD\\Databases\\Entities\\Game.cs",
+              "RelativeDocumentMoniker": "Databases\\Entities\\Game.cs",
+              "ToolTip": "C:\\Users\\Trush\\Desktop\\CRUD\\Databases\\Entities\\Game.cs",
+              "RelativeToolTip": "Databases\\Entities\\Game.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAQAAAAiAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-08T07:01:37.713Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 4,
+              "Title": "GameController.cs",
+              "DocumentMoniker": "C:\\Users\\Trush\\Desktop\\CRUD\\CRUD\\Controllers\\GameController.cs",
+              "RelativeDocumentMoniker": "CRUD\\Controllers\\GameController.cs",
+              "ToolTip": "C:\\Users\\Trush\\Desktop\\CRUD\\CRUD\\Controllers\\GameController.cs",
+              "RelativeToolTip": "CRUD\\Controllers\\GameController.cs",
+              "ViewState": "AgIAACIAAAAAAAAAAAAQwAAAAAAAAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-07T16:17:33.814Z"
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 3,
+              "Title": "Program.cs",
+              "DocumentMoniker": "C:\\Users\\Trush\\Desktop\\CRUD\\CRUD\\Program.cs",
+              "RelativeDocumentMoniker": "CRUD\\Program.cs",
+              "ToolTip": "C:\\Users\\Trush\\Desktop\\CRUD\\CRUD\\Program.cs",
+              "RelativeToolTip": "CRUD\\Program.cs",
+              "ViewState": "AgIAAAAAAAAAAAAAAAAAACQAAAARAAAAAAAAAA==",
+              "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
+              "WhenOpened": "2024-11-06T15:42:21.039Z",
+              "EditorCaption": ""
+            },
+            {
+              "$type": "Document",
+              "DocumentIndex": 1,
               "Title": "GamesDbContext.cs",
               "DocumentMoniker": "C:\\Users\\Trush\\Desktop\\CRUD\\Databases\\DbContexts\\GamesDbContext.cs",
               "RelativeDocumentMoniker": "Databases\\DbContexts\\GamesDbContext.cs",
               "ToolTip": "C:\\Users\\Trush\\Desktop\\CRUD\\Databases\\DbContexts\\GamesDbContext.cs",
               "RelativeToolTip": "Databases\\DbContexts\\GamesDbContext.cs",
-              "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
+              "ViewState": "AgIAAAYAAAAAAAAAAAAowBAAAAAvAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T13:46:41.749Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
-              "Title": "TableBase.cs",
-              "DocumentMoniker": "C:\\Users\\Trush\\Desktop\\CRUD\\Databases\\Tables\\TableBase.cs",
-              "RelativeDocumentMoniker": "Databases\\Tables\\TableBase.cs",
-              "ToolTip": "C:\\Users\\Trush\\Desktop\\CRUD\\Databases\\Tables\\TableBase.cs",
-              "RelativeToolTip": "Databases\\Tables\\TableBase.cs",
+              "DocumentIndex": 5,
+              "Title": "BaseEntity.cs",
+              "DocumentMoniker": "C:\\Users\\Trush\\Desktop\\CRUD\\Databases\\Entities\\BaseEntity.cs",
+              "RelativeDocumentMoniker": "Databases\\Entities\\BaseEntity.cs",
+              "ToolTip": "C:\\Users\\Trush\\Desktop\\CRUD\\Databases\\Entities\\BaseEntity.cs",
+              "RelativeToolTip": "Databases\\Entities\\BaseEntity.cs",
               "ViewState": "AgIAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.000738|",
               "WhenOpened": "2024-11-02T13:46:38.028Z",
@@ -52,7 +102,7 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 2,
+              "DocumentIndex": 0,
               "Title": "GameService.cs",
               "DocumentMoniker": "C:\\Users\\Trush\\Desktop\\CRUD\\CRUD\\Services\\GameService.cs",
               "RelativeDocumentMoniker": "CRUD\\Services\\GameService.cs",

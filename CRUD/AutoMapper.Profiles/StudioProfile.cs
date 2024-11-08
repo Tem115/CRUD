@@ -1,6 +1,6 @@
 ﻿using AutoMapper;
 using CRUD.Models.OutputModels;
-using Databases.Tables;
+using Databases.Entities;
 
 namespace CRUD.AutoMapper.Profiles
 {
