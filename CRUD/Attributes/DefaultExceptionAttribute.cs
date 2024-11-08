@@ -1,6 +1,6 @@
 ﻿
 
-namespace CRUD.Abstractions
+namespace CRUD.Attributes
 {
     [AttributeUsage(AttributeTargets.Method)]
     public class DefaultExceptionAttribute : Attribute

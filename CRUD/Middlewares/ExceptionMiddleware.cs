@@ -1,4 +1,4 @@
-﻿using CRUD.Abstractions;
+﻿using CRUD.Attributes;
 using CRUD.Services;
 using System.Net.Mime;
 

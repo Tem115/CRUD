@@ -1,4 +1,4 @@
-using CRUD.Abstractions;
+using CRUD.Attributes;
 using CRUD.Models;
 using CRUD.Models.InputModels;
 using CRUD.Services;
